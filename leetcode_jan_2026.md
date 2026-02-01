@@ -2783,6 +2783,9 @@ Constraints:
 1 <= nums[i] <= 50
 
 
+
+# Code
+```cpp []
 class Solution {
 public:
     int minimumCost(vector<int>& A) {
@@ -2801,6 +2804,8 @@ public:
         return A[0] + a + b;
     }
 };
+
+```
 
 
 ---------------------------------------------------------------------------------------------------------
