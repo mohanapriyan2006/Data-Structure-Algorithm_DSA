@@ -3,7 +3,7 @@
 # ------------------------------------------------------------
 
 
-# 3637. Trionic Array I
+# [3637. Trionic Array I](https://leetcode.com/problems/trionic-array-i/description/)
 
 Easy
  
