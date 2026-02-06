@@ -269,7 +269,7 @@ public:
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# 3634. Minimum Removals to Balance Array
+# [3634. Minimum Removals to Balance Array](https://leetcode.com/problems/minimum-removals-to-balance-array)
 
 Medium
  
@@ -284,7 +284,6 @@ Return the minimum number of elements to remove so that the remaining array is b
 Note: An array of size 1 is considered balanced as its maximum and minimum are equal, and the condition always holds true.
 
  
-
 
 Example 1:
 
