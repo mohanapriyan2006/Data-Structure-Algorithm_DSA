@@ -447,4 +447,43 @@ The number of nodes in the tree is in the range [0, 5000].
 -104 <= Node.val <= 104
 
 
+# Code
+```cpp []
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+
+class Solution {
+private:
+    bool ans;
+    int checkBalanceTree(TreeNode* root){
+        if(!root) return 0;
+        if(!ans) return 0;
+        int lf = checkBalanceTree(root->left);
+        int rt = checkBalanceTree(root->right);
+        if(abs(lf - rt) > 1) ans = false;
+        return 1 + max(lf , rt);
+    }
+public:
+    bool isBalanced(TreeNode* root) {
+        ans = true;
+        checkBalanceTree(root);
+        return ans;
+    }
+};
+
+```
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+
 
