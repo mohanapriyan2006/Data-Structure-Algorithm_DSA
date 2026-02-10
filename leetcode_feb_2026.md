@@ -550,7 +550,7 @@ public:
 ---------------------------------------------------------------------------------------------------
 
 
-# 3719. Longest Balanced Subarray I
+# [3719. Longest Balanced Subarray I](https://leetcode.com/problems/longest-balanced-subarray-i)
 
 Medium
  
