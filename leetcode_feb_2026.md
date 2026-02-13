@@ -941,8 +941,7 @@ public:
 
 ----------------------------------------------------------------------------------------------------
 
-# 3714. Longest Balanced Substring II
-
+# [3714. Longest Balanced Substring II](https://leetcode.com/problems/longest-balanced-substring-ii)
 Medium
  
 You are given a string s consisting only of the characters 'a', 'b', and 'c'.
