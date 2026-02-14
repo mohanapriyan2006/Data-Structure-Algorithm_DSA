@@ -1072,7 +1072,7 @@ public:
 ------------------------------------------------------------------------------------------------------
 
 
-# 799. Champagne Tower
+# [799. Champagne Tower](https://leetcode.com/problems/champagne-tower)
 
 Medium
  
@@ -1082,6 +1082,7 @@ Then, some champagne is poured into the first glass at the top.  When the topmos
 
 For example, after one cup of champagne is poured, the top most glass is full.  After two cups of champagne are poured, the two glasses on the second row are half full.  After three cups of champagne are poured, those two cups become full - there are 3 full glasses total now.  After four cups of champagne are poured, the third row has the middle glass half full, and the two outside glasses are a quarter full, as pictured below.
 
+![img](https://s3-lc-upload.s3.amazonaws.com/uploads/2018/03/09/tower.png)
 
 
 Now after pouring some non-negative integer cups of champagne, return how full the jth glass in the ith row is (both i and j are 0-indexed.)
