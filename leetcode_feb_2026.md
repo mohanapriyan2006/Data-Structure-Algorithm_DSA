@@ -1622,7 +1622,7 @@ private:
 ------------------------------------------------------------------------------------------------------------------
 
 
-# 868. Binary Gap
+# [868. Binary Gap](https://leetcode.com/problems/binary-gap/description)
 
 Easy
  
@@ -1670,5 +1670,7 @@ Explanation: 5 in binary is "101".
 Constraints:
 
 1 <= n <= 109
+
+
 
 
