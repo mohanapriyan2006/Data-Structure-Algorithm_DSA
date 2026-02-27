@@ -1969,7 +1969,7 @@ public:
 
 ---------------------------------------------------------------------------------------------------------------
 
-# 3666. Minimum Operations to Equalize Binary String
+# [3666. Minimum Operations to Equalize Binary String](https://leetcode.com/problems/minimum-operations-to-equalize-binary-string/description/)
 
 Hard
 
