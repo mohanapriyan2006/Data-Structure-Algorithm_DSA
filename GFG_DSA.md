@@ -1,6 +1,6 @@
  
 -----------------------------------------------
-# Geeks For Geeks - 160 Days ( DSA challenge )
+# Geeks For Geeks -  ( DSA challenge )
 -----------------------------------------------
 
 ## Second Largest -> [GFG](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/second-largest3735)
