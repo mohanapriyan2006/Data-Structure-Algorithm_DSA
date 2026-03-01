@@ -45,6 +45,22 @@ n consists of only digits.
 n does not contain any leading zeros and represents a positive integer.
 
 
+# Code
+```cpp []
+class Solution {
+public:
+    int minPartitions(string n) {
+        int ans = 0;
+        for (char& c : n) ans = max(ans, c - '0');
+        return ans;
+    }
+};
+```
+
+-------------------------------------------------------------------------------------------------
+
+
+
 
 
 
