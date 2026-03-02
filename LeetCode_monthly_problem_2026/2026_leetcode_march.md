@@ -71,7 +71,8 @@ Return the minimum number of steps needed to make the grid valid, or -1 if the g
 
 The main diagonal of a grid is the diagonal that starts at cell (1, 1) and ends at cell (n, n).
 
- 
+
+ ![img](https://assets.leetcode.com/uploads/2020/07/28/fw.jpg)
 
 Example 1:
 
@@ -80,7 +81,7 @@ Input: grid = [[0,0,1],[1,1,0],[1,0,0]]
 
 Output: 3
 
-
+![img](https://assets.leetcode.com/uploads/2020/07/16/e2.jpg)
 
 
 Example 2:
@@ -91,7 +92,7 @@ Output: -1
 
 Explanation: All rows are similar, swaps have no effect on the grid.
 
-
+![IMG](https://assets.leetcode.com/uploads/2020/07/16/e3.jpg)
 
 Example 3:
 
