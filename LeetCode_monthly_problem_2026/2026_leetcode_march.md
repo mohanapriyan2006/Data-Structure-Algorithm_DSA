@@ -227,6 +227,8 @@ A position (i, j) is called special if mat[i][j] == 1 and all other elements in 
 
 Example 1:
 
+![img](https://assets.leetcode.com/uploads/2021/12/23/special1.jpg)
+
 
 Input: mat = [[1,0,0],[0,0,1],[1,0,0]]
 
@@ -237,6 +239,8 @@ Explanation: (1, 2) is a special position because mat[1][2] == 1 and all other e
 
 
 Example 2:
+
+![img](https://assets.leetcode.com/uploads/2021/12/24/special-grid.jpg)
 
 Input: mat = [[1,0,0],[0,1,0],[0,0,1]]
 
