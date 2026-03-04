@@ -215,7 +215,7 @@ public:
 ------------------------------------------------------------------------------------------------------
 
 
-# 1582. Special Positions in a Binary Matrix
+# [1582. Special Positions in a Binary Matrix](https://leetcode.com/problems/special-positions-in-a-binary-matrix/)
 
 Easy
  
@@ -233,7 +233,6 @@ Input: mat = [[1,0,0],[0,0,1],[1,0,0]]
 Output: 1
 
 Explanation: (1, 2) is a special position because mat[1][2] == 1 and all other elements in row 1 and column 2 are 0.
-
 
 
 
