@@ -405,8 +405,22 @@ s[i]​​​​ is either '0' or '1'.
 s[0] is '1'.
 
 
+# Code
+```cpp []
+class Solution {
+public:
+    bool checkOnesSegment(string s) {
+        const int n = s.size();
+        int indZero = s.find('0');
+        if(indZero < 0) return true;
+        int indLastOne = s.find_last_of('1');
+        return indLastOne < indZero;
+    }
+};
+```
 
 
+--------------------------------------------------------------------------------------------------------------
 
 
 
