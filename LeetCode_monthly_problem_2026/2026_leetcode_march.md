@@ -1245,7 +1245,7 @@ public:
 ----------------------------------------------------------------------------------
 
 
-# 1622. Fancy Sequence
+# [1622. Fancy Sequence](https://leetcode.com/problems/fancy-sequence/)
 
 Hard
  
