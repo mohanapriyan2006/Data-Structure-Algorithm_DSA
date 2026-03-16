@@ -1354,7 +1354,7 @@ public:
 
 -------------------------------------------------------------------------------------------------------
 
-# 1878. Get Biggest Three Rhombus Sums in a Grid
+# [1878. Get Biggest Three Rhombus Sums in a Grid](https://leetcode.com/problems/get-biggest-three-rhombus-sums-in-a-grid/)
 
 Medium
  
@@ -1367,13 +1367,10 @@ Note that the rhombus can have an area of 0, which is depicted by the purple rho
 
 Return the biggest three distinct rhombus sums in the grid in descending order. If there are less than three distinct values, return all of them.
 
- 
-
-
-
 
 Example 1:
 
+![img](https://assets.leetcode.com/uploads/2021/04/23/pc73-q4-desc-2.png)
 
 Input: grid = [[3,4,5,1,3],[3,3,4,2,3],[20,30,200,40,10],[1,5,5,4,1],[4,3,2,2,5]]
 
@@ -1389,6 +1386,7 @@ Explanation: The rhombus shapes for the three biggest distinct rhombus sums are 
 
 Example 2:
 
+![img](https://assets.leetcode.com/uploads/2021/04/23/pc73-q4-ex1.png)
 
 Input: grid = [[1,2,3],[4,5,6],[7,8,9]]
 
@@ -1405,6 +1403,7 @@ Explanation: The rhombus shapes for the three biggest distinct rhombus sums are 
 
 Example 3:
 
+![img](https://assets.leetcode.com/uploads/2021/04/23/pc73-q4-ex2.png)
 
 Input: grid = [[7,7,7]]
 
