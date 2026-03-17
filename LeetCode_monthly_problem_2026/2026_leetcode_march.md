@@ -1486,7 +1486,7 @@ public:
 
 --------------------------------------------------------------------------------------------------------------
 
-# 1727. Largest Submatrix With Rearrangements
+# [1727. Largest Submatrix With Rearrangements](https://leetcode.com/problems/largest-submatrix-with-rearrangements/)
 
 Medium
  
