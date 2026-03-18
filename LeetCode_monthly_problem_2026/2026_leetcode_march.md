@@ -1569,7 +1569,7 @@ public:
 ------------------------------------------------------------------------------------------------------------------
 
 
-# 3070. Count Submatrices with Top-Left Element and Sum Less Than k
+# [3070. Count Submatrices with Top-Left Element and Sum Less Than k](https://leetcode.com/problems/count-submatrices-with-top-left-element-and-sum-less-than-k/)
 
 Medium
  
@@ -1582,6 +1582,8 @@ Return the number of submatrices that contain the top-left element of the grid, 
 
 Example 1:
 
+![img](https://assets.leetcode.com/uploads/2024/01/01/example1.png)
+
 Input: grid = [[7,6,3],[6,6,1]], k = 18
 
 Output: 4
@@ -1591,6 +1593,8 @@ Explanation: There are only 4 submatrices, shown in the image above, that contai
 
 
 Example 2:
+
+![img](https://assets.leetcode.com/uploads/2024/01/01/example21.png)
 
 Input: grid = [[7,2,9],[1,5,0],[2,6,6]], k = 20
 
