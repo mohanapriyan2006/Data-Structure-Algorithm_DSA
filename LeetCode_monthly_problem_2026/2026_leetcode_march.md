@@ -1739,7 +1739,7 @@ public:
 --------------------------------------------------------------------------------------------------------------------
 
 
-# 3567. Minimum Absolute Difference in Sliding Submatrix
+# [3567. Minimum Absolute Difference in Sliding Submatrix](https://leetcode.com/problems/minimum-absolute-difference-in-sliding-submatrix)
 
 Medium
  
@@ -1808,5 +1808,9 @@ Constraints:
 1 <= n == grid[i].length <= 30
 -105 <= grid[i][j] <= 105
 1 <= k <= min(m, n)
+
+
+
+
 
 
