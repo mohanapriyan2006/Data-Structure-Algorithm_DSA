@@ -1923,7 +1923,7 @@ public:
 ---------------------------------------------------------------------------------------------------------------------------
 
 
-# 1886. Determine Whether Matrix Can Be Obtained By Rotation
+# [1886. Determine Whether Matrix Can Be Obtained By Rotation](https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation)
 
 Easy
  
@@ -1932,6 +1932,8 @@ Given two n x n binary matrices mat and target, return true if it is possible to
  
 
 Example 1:
+
+![img](https://assets.leetcode.com/uploads/2021/05/20/grid3.png)
 
 Input: mat = [[0,1],[1,0]], target = [[1,0],[0,1]]
 
@@ -1943,6 +1945,7 @@ Explanation: We can rotate mat 90 degrees clockwise to make mat equal target.
 
 Example 2:
 
+![img](https://assets.leetcode.com/uploads/2021/05/20/grid4.png)
 
 Input: mat = [[0,1],[1,1]], target = [[1,0],[0,1]]
 
@@ -1953,6 +1956,8 @@ Explanation: It is impossible to make mat equal to target by rotating mat.
 
 
 Example 3:
+
+![img](https://assets.leetcode.com/uploads/2021/05/26/grid4.png)
 
 Input: mat = [[0,0,0],[0,1,0],[1,1,1]], target = [[1,1,1],[0,1,0],[0,0,0]]
 
