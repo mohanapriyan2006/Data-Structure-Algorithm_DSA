@@ -2184,7 +2184,7 @@ public:
 ------------------------------------------------------------------------------------------------------------------------
 
 
-# 3546. Equal Sum Grid Partition I
+# [3546. Equal Sum Grid Partition I](https://leetcode.com/problems/equal-sum-grid-partition-i)
 
 Medium
  
@@ -2204,7 +2204,7 @@ Output: true
 
 Explanation:
 
-
+![img](https://assets.leetcode.com/uploads/2025/03/30/lc.jpeg)
 
 A horizontal cut between row 0 and row 1 results in two non-empty sections, each with a sum of 5. Thus, the answer is true.
 
