@@ -2271,7 +2271,7 @@ public:
 
 -----------------------------------------------------------------------------------------------------------
 
-# 3548. Equal Sum Grid Partition II
+# [3548. Equal Sum Grid Partition II](https://leetcode.com/problems/equal-sum-grid-partition-ii/)
 
 Hard
  
@@ -2294,7 +2294,7 @@ Output: true
 
 Explanation:
 
-
+![img](https://assets.leetcode.com/uploads/2025/03/30/lc.jpeg)
 
 A horizontal cut after the first row gives sums 1 + 4 = 5 and 2 + 3 = 5, which are equal. Thus, the answer is true.
 
@@ -2309,7 +2309,7 @@ Output: true
 
 Explanation:
 
-
+![img](https://assets.leetcode.com/uploads/2025/04/01/chatgpt-image-apr-1-2025-at-05_28_12-pm.png)
 
 A vertical cut after the first column gives sums 1 + 3 = 4 and 2 + 4 = 6.
 By discounting 2 from the right section (6 - 2 = 4), both sections have equal sums and remain connected. Thus, the answer is true.
@@ -2325,7 +2325,7 @@ Output: false
 
 Explanation:
 
-
+![img](https://assets.leetcode.com/uploads/2025/04/01/chatgpt-image-apr-2-2025-at-02_50_29-am.png)
 
 A horizontal cut after the first row gives 1 + 2 + 4 = 7 and 2 + 3 + 5 = 10.
 By discounting 3 from the bottom section (10 - 3 = 7), both sections have equal sums, but they do not remain connected as it splits the bottom section into two parts ([2] and [5]). Thus, the answer is false.
