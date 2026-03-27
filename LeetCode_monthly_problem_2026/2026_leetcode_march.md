@@ -2446,7 +2446,7 @@ public:
 --------------------------------------------------------------------------------------------------------------
 
 
-# 2946. Matrix Similarity After Cyclic Shifts
+# [2946. Matrix Similarity After Cyclic Shifts](https://leetcode.com/problems/matrix-similarity-after-cyclic-shifts)
 
 Easy
  
@@ -2456,15 +2456,19 @@ The following proccess happens k times:
 
 Even-indexed rows (0, 2, 4, ...) are cyclically shifted to the left.
 
+![img](https://assets.leetcode.com/uploads/2024/05/19/lshift.jpg)
 
 Odd-indexed rows (1, 3, 5, ...) are cyclically shifted to the right.
 
+![img](https://assets.leetcode.com/uploads/2024/05/19/rshift-stlone.jpg)
 
 Return true if the final modified matrix after k steps is identical to the original matrix, and false otherwise.
 
  
 
 Example 1:
+
+![img](https://assets.leetcode.com/uploads/2024/05/19/t1-2.jpg)
 
 Input: mat = [[1,2,3],[4,5,6],[7,8,9]], k = 4
 
@@ -2477,6 +2481,8 @@ In each step left shift is applied to rows 0 and 2 (even indices), and right shi
 
 
 Example 2:
+
+![img](https://assets.leetcode.com/uploads/2024/05/19/t1-3.jpg)
 
 Input: mat = [[1,2,1,2],[5,5,5,5],[6,3,6,3]], k = 2
 
@@ -2504,4 +2510,9 @@ Constraints:
 1 <= mat[i].length <= 25
 1 <= mat[i][j] <= 25
 1 <= k <= 50
+
+
+
+
+
 
