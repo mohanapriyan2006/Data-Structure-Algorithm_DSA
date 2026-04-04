@@ -359,7 +359,7 @@ public:
 
 ------------------------------------------------------------------------------------------------------
 
-# 2075. Decode the Slanted Ciphertext
+# [2075. Decode the Slanted Ciphertext](https://leetcode.com/problems/decode-the-slanted-ciphertext/)
 
 Medium
  
@@ -367,16 +367,20 @@ A string originalText is encoded using a slanted transposition cipher to a strin
 
 originalText is placed first in a top-left to bottom-right manner.
 
+![img](https://assets.leetcode.com/uploads/2021/11/07/exa11.png)
 
 The blue cells are filled first, followed by the red cells, then the yellow cells, and so on, until we reach the end of originalText. The arrow indicates the order in which the cells are filled. All empty cells are filled with ' '. The number of columns is chosen such that the rightmost column will not be empty after filling in originalText.
 
+
 encodedText is then formed by appending all characters of the matrix in a row-wise fashion.
 
+![img](https://assets.leetcode.com/uploads/2021/11/07/exa12.png)
 
 The characters in the blue cells are appended first to encodedText, then the red cells, and so on, and finally the yellow cells. The arrow indicates the order in which the cells are accessed.
 
 For example, if originalText = "cipher" and rows = 3, then we encode it in the following manner:
 
+![img](https://assets.leetcode.com/uploads/2021/10/25/desc2.png)
 
 The blue arrows depict how originalText is placed in the matrix, and the red arrows denote the order in which encodedText is formed. In the above example, encodedText = "ch ie pr".
 
@@ -389,6 +393,9 @@ Note: originalText does not have any trailing spaces ' '. The test cases are gen
 
 Example 1:
 
+![img](https://assets.leetcode.com/uploads/2021/10/26/exam1.png)
+
+
 Input: encodedText = "ch   ie   pr", rows = 3
 
 Output: "cipher"
@@ -399,6 +406,8 @@ Explanation: This is the same example described in the problem description.
 
 
 Example 2:
+
+![img](https://assets.leetcode.com/uploads/2021/10/26/eg2.png)
 
 
 Input: encodedText = "iveo    eed   l te   olc", rows = 4
