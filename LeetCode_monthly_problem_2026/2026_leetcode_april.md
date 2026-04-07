@@ -675,7 +675,7 @@ public:
 ----------------------------------------------------------------------------------------------------------
 
 
-# 2069. Walking Robot Simulation II
+# [2069. Walking Robot Simulation II](https://leetcode.com/problems/walking-robot-simulation-ii/)
 
 Medium
  
@@ -713,6 +713,7 @@ Output
 [null, null, null, [4, 0], "East", null, null, null, [1, 2], "West"]
 
 
+![img](https://assets.leetcode.com/uploads/2021/10/09/example-1.png)
 
 Explanation
 
