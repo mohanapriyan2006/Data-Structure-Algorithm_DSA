@@ -1215,7 +1215,9 @@ public:
 # [1320. Minimum Distance to Type a Word Using Two Fingers](https://leetcode.com/problems/minimum-distance-to-type-a-word-using-two-fingers/)
 
 Hard
+
  
+![img](https://assets.leetcode.com/uploads/2020/01/02/leetcode_keyboard.png)
 
 You have a keyboard layout as shown above in the X-Y plane, where each English uppercase letter is located at some coordinate.
 
@@ -1230,7 +1232,6 @@ Note that the initial positions of your two fingers are considered free so do no
 
 Example 1:
 
-![img](https://assets.leetcode.com/uploads/2020/01/02/leetcode_keyboard.png)
 
 Input: word = "CAKE"
 
@@ -1264,6 +1265,51 @@ Constraints:
 
 2 <= word.length <= 300
 word consists of uppercase English letters.
+
+
+
+# Code
+```cpp []
+class Solution {
+public:
+    int cal(int a, int b) {
+        int ax = a / 6, ay = a % 6, bx = b / 6, by = b % 6;
+        return abs(a / 6 - b / 6) + abs(a % 6 - b % 6);
+    }
+
+    int minimumDistance(string s) {
+        int n = s.size(), dp[300][26][26];
+
+        for (int i = 0; i < n; i++) {
+            int t = s[i] - 'A';
+            for (int j = 0; j < 26; j++) {
+                for (int k = 0; k < 26; k++) {
+                    dp[i + 1][j][k] = 1e6;
+                }
+            }
+            for (int j = 0; j < 26; j++) {
+                for (int k = 0; k < 26; k++) {
+                    dp[i + 1][j][t] = min(dp[i + 1][j][t], dp[i][j][k] + cal(k, t));
+                    dp[i + 1][t][k] = min(dp[i + 1][t][k], dp[i][j][k] + cal(j, t));
+                }
+            }
+        }
+
+        int ans = 1e6;
+        for (int j = 0; j < 26; j++) {
+            for (int k = 0; k < 26; k++) {
+                ans = min(ans, dp[n][j][k]);
+            }
+        }
+        return ans;
+    }
+};
+```
+
+---------------------------------------------------------------------------------------------------------------------
+
+
+
 
 
 
