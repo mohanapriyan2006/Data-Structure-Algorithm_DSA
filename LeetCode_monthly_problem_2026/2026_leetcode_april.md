@@ -1212,7 +1212,7 @@ public:
 -----------------------------------------------------------------------------------------------
 
 
-# 1320. Minimum Distance to Type a Word Using Two Fingers
+# [1320. Minimum Distance to Type a Word Using Two Fingers](https://leetcode.com/problems/minimum-distance-to-type-a-word-using-two-fingers/)
 
 Hard
  
@@ -1230,6 +1230,7 @@ Note that the initial positions of your two fingers are considered free so do no
 
 Example 1:
 
+![img](https://assets.leetcode.com/uploads/2020/01/02/leetcode_keyboard.png)
 
 Input: word = "CAKE"
 
