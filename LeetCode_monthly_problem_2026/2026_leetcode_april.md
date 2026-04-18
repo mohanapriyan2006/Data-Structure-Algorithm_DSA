@@ -1309,7 +1309,7 @@ public:
 ---------------------------------------------------------------------------------------------------------------------
 
 
-# 3783. Mirror Distance of an Integer
+# [3783. Mirror Distance of an Integer](https://leetcode.com/problems/mirror-distance-of-an-integer)
 
 Easy
  
@@ -1366,10 +1366,23 @@ Constraints:
 1 <= n <= 109
 
 
+# Code
+```cpp []
+class Solution {
+public:
+    int mirrorDistance(int n) {
+        long long rev=0;
+        for(int x=n; x; x/=10){
+            rev=10*rev+x%10;
+        }
+        rev-=n;
+        return rev>=0?rev:-rev;
+    }
+};
+```
 
 
-
-
+-------------------------------------------------------------------------------------------------------------
 
 
 
