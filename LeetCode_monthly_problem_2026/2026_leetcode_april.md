@@ -1455,7 +1455,7 @@ public:
 -------------------------------------------------------------------------------
 
 
-# 2078. Two Furthest Houses With Different Colors
+# [2078. Two Furthest Houses With Different Colors](https://leetcode.com/problems/two-furthest-houses-with-different-colors/)
 
 Easy
  
@@ -1469,6 +1469,7 @@ The distance between the ith and jth houses is abs(i - j), where abs(x) is the a
 
 Example 1:
 
+![img](https://assets.leetcode.com/uploads/2021/10/31/eg1.png)
 
 Input: colors = [1,1,1,6,1,1,1]
 
@@ -1484,6 +1485,9 @@ Note that houses 3 and 6 can also produce the optimal answer.
 
 
 Example 2:
+
+
+![i,g](https://assets.leetcode.com/uploads/2021/10/31/eg2.png)
 
 
 Input: colors = [1,8,3,8,3]
