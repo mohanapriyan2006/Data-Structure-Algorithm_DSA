@@ -2040,7 +2040,7 @@ public:
 
 ---------------------------------------------------------------------------------------------------
 
-# 1559. Detect Cycles in 2D Grid
+# [1559. Detect Cycles in 2D Grid](https://leetcode.com/problems/detect-cycles-in-2d-grid/description)
 
 Medium
  
@@ -2056,7 +2056,7 @@ Return true if any cycle of the same value exists in grid, otherwise, return fal
 
 Example 1:
 
-
+![img](https://assets.leetcode.com/uploads/2020/07/15/1.png)
 
 Input: grid = [["a","a","a","a"],["a","b","b","a"],["a","b","b","a"],["a","a","a","a"]]
 
@@ -2064,12 +2064,12 @@ Output: true
 
 Explanation: There are two valid cycles shown in different colors in the image below:
 
-
+![img](https://assets.leetcode.com/uploads/2020/07/15/11.png)
 
 
 Example 2:
 
-
+![img](https://assets.leetcode.com/uploads/2020/07/15/22.png)
 
 Input: grid = [["c","c","c","a"],["c","d","c","c"],["c","c","e","c"],["f","c","c","c"]]
 
@@ -2077,12 +2077,12 @@ Output: true
 
 Explanation: There is only one valid cycle highlighted in the image below:
 
-
+![img](https://assets.leetcode.com/uploads/2020/07/15/2.png)
 
 
 Example 3:
 
-
+![img](https://assets.leetcode.com/uploads/2020/07/15/3.png)
 
 Input: grid = [["a","b","b"],["b","z","b"],["b","b","a"]]
 
