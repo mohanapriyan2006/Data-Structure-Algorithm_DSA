@@ -2138,7 +2138,7 @@ public:
 -------------------------------------------------------------------------------------------------------------------
 
 
-# 2033. Minimum Operations to Make a Uni-Value Grid
+# [2033. Minimum Operations to Make a Uni-Value Grid](https://leetcode.com/problems/minimum-operations-to-make-a-uni-value-grid/)
  
 Medium
  
@@ -2152,6 +2152,7 @@ Return the minimum number of operations to make the grid uni-value. If it is not
 
 Example 1:
 
+![img](https://assets.leetcode.com/uploads/2021/09/21/gridtxt.png)
 
 Input: grid = [[2,4],[6,8]], x = 2
 
@@ -2168,6 +2169,7 @@ A total of 4 operations were used.
 
 Example 2:
 
+![img](https://assets.leetcode.com/uploads/2021/09/21/gridtxt-1.png)
 
 Input: grid = [[1,5],[2,3]], x = 1
 
@@ -2180,6 +2182,7 @@ Explanation: We can make every element equal to 3.
 
 Example 3:
 
+![img](https://assets.leetcode.com/uploads/2021/09/21/gridtxt-2.png)
 
 Input: grid = [[1,2],[3,4]], x = 2
 
