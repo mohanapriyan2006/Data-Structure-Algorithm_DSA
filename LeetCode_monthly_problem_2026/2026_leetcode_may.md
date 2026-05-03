@@ -95,7 +95,7 @@ public:
 
 ---------------------------------------------------------------------------------------------------
 
-# 796. Rotate String
+# [796. Rotate String](https://leetcode.com/problems/rotate-string/description/)
  
 Easy
  
@@ -128,6 +128,24 @@ Constraints:
 
 1 <= s.length, goal.length <= 100
 s and goal consist of lowercase English letters.
+
+
+
+
+# Code
+```cpp []
+class Solution {
+public:
+    bool rotateString(string s, string goal) {
+        
+        if(s.size() != goal.size()) return false;
+
+        return ( (s + s).find(goal) < s.size() );
+    }
+};
+```
+
+------------------------------------------------------------------------------------
 
 
 
