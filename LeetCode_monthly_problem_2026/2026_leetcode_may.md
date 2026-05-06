@@ -228,6 +228,7 @@ Return an n x m matrix representing the box after the rotation described above.
 Example 1:
 
 
+![img](https://assets.leetcode.com/uploads/2021/04/08/rotatingtheboxleetcodewithstones.png)
 
 Input: boxGrid = [["#",".","#"]]
 
@@ -238,10 +239,9 @@ Output: [["."],
 
 
 
-
 Example 2:
 
-
+![img](https://assets.leetcode.com/uploads/2021/04/08/rotatingtheboxleetcode2withstones.png)
 
 Input: boxGrid = [["#",".","*","."],
               ["#","#","*","."]]
@@ -256,6 +256,7 @@ Output: [["#","."],
 
 Example 3:
 
+![img](https://assets.leetcode.com/uploads/2021/04/08/rotatingtheboxleetcode3withstone.png)
 
 
 Input: boxGrid = [["#","#","*",".","*","."],
@@ -279,6 +280,42 @@ m == boxGrid.length
 n == boxGrid[i].length
 1 <= m, n <= 500
 boxGrid[i][j] is either '#', '*', or '.'.
+
+
+
+# Code
+```cpp []
+class Solution {
+public:
+    vector<vector<char>> rotateTheBox(vector<vector<char>>& grid) {
+        int rows = grid.size(), cols = grid[0].size();
+        for (int r = 0; r < rows; r++) {
+            int p = 0;
+            for (int c = 0; c < cols; c++) {
+                if (grid[r][c] == '.') {
+                    swap(grid[r][c], grid[r][p]);
+                    p++;
+                } else if (grid[r][c] == '*')
+                    p = c + 1;
+            }
+        }
+        
+        vector<vector<char>> res(cols, vector<char>(rows));
+        for (int r = 0; r < rows; r++)
+            for (int c = 0; c < cols; c++)
+                res[c][rows - 1 - r] = grid[r][c];
+                
+        return res;
+    }
+};
+```
+
+
+-----------------------------------------------------------------------------------------------------------
+
+
+
+
 
 
 
