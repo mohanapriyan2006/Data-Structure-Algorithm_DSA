@@ -314,7 +314,7 @@ public:
 -----------------------------------------------------------------------------------------------------------
 
 
-# 3660. Jump Game IX
+# [3660. Jump Game IX](https://leetcode.com/problems/jump-game-ix/)
 
 Medium
  
@@ -329,7 +329,7 @@ For each index i, find the maximum value in nums that can be reached by followin
 Return an array ans where ans[i] is the maximum value reachable starting from index i.
 
 
- 
+ ![img](https://assets.leetcode.com/users/images/d1b41787-c88d-490b-a611-f34fa10d4dd9_1778114546.1877158.png)
 
 Example 1:
 
