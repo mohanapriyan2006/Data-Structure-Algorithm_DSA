@@ -411,7 +411,7 @@ public:
 -----------------------------------------------------------------------------------------------------------------
 
 
-# 3629. Minimum Jumps to Reach End via Prime Teleportation
+# [3629. Minimum Jumps to Reach End via Prime Teleportation](https://leetcode.com/problems/minimum-jumps-to-reach-end-via-prime-teleportation)
 
 Medium
  
