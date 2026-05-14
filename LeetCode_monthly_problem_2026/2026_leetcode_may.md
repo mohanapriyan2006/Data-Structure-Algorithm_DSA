@@ -1043,7 +1043,7 @@ public:
 
 --------------------------------------------------------------------------------
 
-#  2784. Check if Array is Good
+#  [2784. Check if Array is Good](https://leetcode.com/problems/check-if-array-is-good)
 
 Easy
  
@@ -1056,7 +1056,7 @@ Return true if the given array is good, otherwise return false.
 Note: A permutation of integers represents an arrangement of these numbers.
 
  
-
+![img](https://assets.leetcode.com/users/images/40430b82-20ef-4073-8e5c-29bbb27b17b1_1778720447.3829114.png)
 
 
 Example 1:
