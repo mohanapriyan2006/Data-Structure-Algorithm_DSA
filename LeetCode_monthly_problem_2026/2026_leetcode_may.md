@@ -1140,7 +1140,7 @@ public:
 ---------------------------------------------------------------------------------------------------------------------
 
 
-# 153. Find Minimum in Rotated Sorted Array
+# [153. Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description)
  
 Medium
  
@@ -1196,6 +1196,35 @@ n == nums.length
 -5000 <= nums[i] <= 5000
 All the integers of nums are unique.
 nums is sorted and rotated between 1 and n times.
+
+
+# Code
+```cpp []
+class Solution {
+public:
+    int findMin(vector<int>& nums) {
+
+        int l = 0;
+        int h = nums.size() - 1;
+
+        while(l<h){
+            int mid = l + (h-l)/2;
+            if(nums[mid] > nums[h]){
+                l = mid + 1;
+            }else{
+                h = mid;
+            }
+        }
+      
+        return nums[l];
+    }
+};
+```
+
+-------------------------------------------------------------------------------------------------------------
+
+
+
 
 
 
