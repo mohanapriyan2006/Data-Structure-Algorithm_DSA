@@ -1237,7 +1237,12 @@ Given the sorted rotated array nums that may contain duplicates, return the mini
 
 You must decrease the overall operation steps as much as possible.
 
- 
+
+ ![img](https://assets.leetcode.com/users/images/1eebda8a-86c5-439f-9bf6-4ddf3dc36489_1778890239.7109902.png)
+
+ <br/>
+
+ ![img](https://assets.leetcode.com/users/images/14356d5c-5dd0-43eb-af30-e4cd8744ca1e_1778894140.5373573.gif)
 
 
 
