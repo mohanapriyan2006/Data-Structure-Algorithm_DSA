@@ -1294,7 +1294,7 @@ public:
 
 ----------------------------------------------------------------------------------------------------------
  
-# 1306. Jump Game III
+# [1306. Jump Game III](https://leetcode.com/problems/jump-game-iii/)
 
 Medium
  
@@ -1302,7 +1302,7 @@ Given an array of non-negative integers arr, you are initially positioned at sta
 
 Notice that you can not jump outside of the array at any time.
 
- 
+ ![img]()
 
 
 Example 1:
@@ -1351,6 +1351,7 @@ Constraints:
 
 
 
+------------------------------------------------------------------------------------------------------------
 
 
 
