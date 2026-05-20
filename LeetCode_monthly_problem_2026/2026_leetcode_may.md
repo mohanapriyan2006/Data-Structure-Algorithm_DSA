@@ -1552,7 +1552,7 @@ public:
 ----------------------------------------------------------------------------------
 
 
-# 2657. Find the Prefix Common Array of Two Arrays
+# [2657. Find the Prefix Common Array of Two Arrays](https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/)
 
 Medium
  
@@ -1564,7 +1564,9 @@ Return the prefix common array of A and B.
 
 A sequence of n integers is called a permutation if it contains all integers from 1 to n exactly once.
 
- 
+![img](https://assets.leetcode.com/users/images/e6e5d85c-b631-4430-8b3e-ac04417742e6_1779238436.586387.gif)
+
+
 
 Example 1:
 
