@@ -1773,13 +1773,13 @@ Input: nums = [1], target = 0
 Output: -1
 
 
-!{img](https://assets.leetcode.com/users/images/5b34e34f-3584-48f3-a6b4-b13e37ec54c6_1779409083.0322373.png)
+![img](https://assets.leetcode.com/users/images/5b34e34f-3584-48f3-a6b4-b13e37ec54c6_1779409083.0322373.png)
 
-!{img](https://assets.leetcode.com/users/images/1f87da75-ecf4-48da-b142-d4fd928009fb_1778801700.4621232.png)
+![img](https://assets.leetcode.com/users/images/1f87da75-ecf4-48da-b142-d4fd928009fb_1778801700.4621232.png)
 
-!{img](https://assets.leetcode.com/users/images/89f87aad-5b0f-46f1-819a-a6f018a72495_1778800100.8111465.png)
+![img](https://assets.leetcode.com/users/images/89f87aad-5b0f-46f1-819a-a6f018a72495_1778800100.8111465.png)
 
-!{img](https://assets.leetcode.com/users/images/5e6e8b81-c931-44a5-b0ec-090b57ed45ad_1779408960.2074807.png)
+![img](https://assets.leetcode.com/users/images/5e6e8b81-c931-44a5-b0ec-090b57ed45ad_1779408960.2074807.png)
  
 
 
@@ -1793,4 +1793,41 @@ nums is an ascending array that is possibly rotated.
 
 
 
+# Code
+```cpp []
+class Solution {
+public:
+    int search(vector<int>& nums, int target) {
+
+        int n = nums.size();
+        int l = 0 , h = n - 1;
+
+        while(l<=h){
+            int m = (l+h) / 2;
+            if(nums[m] == target) return m;
+
+            if(nums[l] <= nums[m]){
+                if(nums[l] <= target && target <= nums[m]){
+                    h = m - 1;
+                }
+                else{
+                    l = m + 1;
+                }
+            }
+            else{
+                if(nums[m] <= target && target <= nums[h]){
+                    l = m + 1;
+                }
+                else{
+                    h = m - 1;
+                }
+            }
+        }
+
+        return -1;
+    }
+};
+```
+
+--------------------------------------------------------------------------------------------------
 
