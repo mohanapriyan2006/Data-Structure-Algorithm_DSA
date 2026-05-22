@@ -1736,7 +1736,7 @@ public:
 
 ------------------------------------------------------------------------------------------------------------
 
-# 33. Search in Rotated Sorted Array
+# [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/description)
 
 Medium
  
@@ -1771,6 +1771,15 @@ Example 3:
 Input: nums = [1], target = 0
 
 Output: -1
+
+
+!{img](https://assets.leetcode.com/users/images/5b34e34f-3584-48f3-a6b4-b13e37ec54c6_1779409083.0322373.png)
+
+!{img](https://assets.leetcode.com/users/images/1f87da75-ecf4-48da-b142-d4fd928009fb_1778801700.4621232.png)
+
+!{img](https://assets.leetcode.com/users/images/89f87aad-5b0f-46f1-819a-a6f018a72495_1778800100.8111465.png)
+
+!{img](https://assets.leetcode.com/users/images/5e6e8b81-c931-44a5-b0ec-090b57ed45ad_1779408960.2074807.png)
  
 
 
