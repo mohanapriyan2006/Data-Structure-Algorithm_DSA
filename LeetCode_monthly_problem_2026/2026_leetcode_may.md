@@ -1831,7 +1831,7 @@ public:
 
 --------------------------------------------------------------------------------------------------
 
-# 1752. Check if Array Is Sorted and Rotated
+# [1752. Check if Array Is Sorted and Rotated](https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/)
  
 Easy
  
@@ -1841,7 +1841,9 @@ There may be duplicates in the original array.
 
 Note: An array A rotated by x positions results in an array B of the same length such that B[i] == A[(i+x) % A.length] for every valid index i.
 
+![img](https://assets.leetcode.com/users/images/4f4c4dff-f5af-4eb8-8257-0495e564b2c4_1779491334.3749745.png)
 
+![img](https://assets.leetcode.com/users/images/93e741d7-34bb-4163-a6dd-16c9b9aa9983_1779493000.6066852.png)
  
 
 Example 1:
