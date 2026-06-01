@@ -1,8 +1,9 @@
-# ----------------------------------------------------------------------------------------------------
+# --------------------------------------- 
 # LeetCode 2026 - June Month Problem
-# ----------------------------------------------------------------------------------------------------
+# --------------------------------------- 
 
-# 2144. Minimum Cost of Buying Candies With Discount
+
+# [2144. Minimum Cost of Buying Candies With Discount](https://leetcode.com/problems/minimum-cost-of-buying-candies-with-discount)
 
 Easy
  
@@ -12,8 +13,6 @@ The customer can choose any candy to take away for free as long as the cost of t
 
 For example, if there are 4 candies with costs 1, 2, 3, and 4, and the customer buys candies with costs 2 and 3, they can take the candy with cost 1 for free, but not the candy with cost 4.
 Given a 0-indexed integer array cost, where cost[i] denotes the cost of the ith candy, return the minimum cost of buying all the candies.
-
-
 
  
 
