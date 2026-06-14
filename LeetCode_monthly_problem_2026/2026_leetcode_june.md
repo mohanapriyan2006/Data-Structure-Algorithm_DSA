@@ -727,7 +727,6 @@ Explanation:
 There is only one node with a twin in the linked list having twin sum of 1 + 100000 = 100001.
 
 
- 
 
 Constraints:
 
@@ -736,3 +735,27 @@ The number of nodes in the list is an even integer in the range [2, 105].
 
 
 
+
+# Code
+```cpp []
+class Solution {
+public:
+    int pairSum(ListNode* head) {
+        int res = 0;
+        ListNode* left = head;
+
+        auto dfs = [&](this auto&& dfs, ListNode* right) -> void {
+            if (right->next)
+                dfs(right->next);
+
+            res = max(res, left->val + right->val);
+            left = left->next;
+        };
+
+        dfs(head);
+        return res;
+    }
+};
+```
+
+------------------------------------------------------------------------------------------------------------
