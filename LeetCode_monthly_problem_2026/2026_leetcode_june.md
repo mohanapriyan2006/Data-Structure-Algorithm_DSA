@@ -854,7 +854,7 @@ public:
 ----------------------------------------------------------------------------
 
 
-# 1732. Find the Highest Altitude
+# [1732. Find the Highest Altitude](https://leetcode.com/problems/find-the-highest-altitude/)
 
 Easy
  
@@ -891,8 +891,25 @@ n == gain.length
 -100 <= gain[i] <= 100
 
 
+# Code
+```cpp []
+class Solution {
+public:
+    int largestAltitude(vector<int>& gain) {
+        int ans = 0, sum = 0;
 
+        for (auto& it : gain) {
+            sum += it;
+            int d = sum - ans;
+            ans += d & ~(d >> 0x1F);
+        }
 
+        return ans;
+    }
+};
+```
+
+------------------------------------------------------------------------------------------------------------
 
 
 
