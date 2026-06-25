@@ -1438,7 +1438,7 @@ public:
 
 ----------------------------------------------------------------------------------------
 
-# 3737. Count Subarrays With Majority Element I
+# [3737. Count Subarrays With Majority Element I](https://leetcode.com/problems/count-subarrays-with-majority-element-i/)
 
 Medium
  
@@ -1508,6 +1508,37 @@ Constraints:
 
 
 
+# Code
+```cpp []
+class Solution {
+public:
+    long long countMajoritySubarrays(vector<int>& nums, int target) {
+        int n = nums.size();
+        long long ans = 0;
+
+        for (int l = 0; l < n; l++) {
+            int targetCount = 0;
+
+            for (int r = l; r < n; r++) {
+                if (nums[r] == target) {
+                    targetCount++;
+                }
+
+                int len = r - l + 1;
+
+                if (targetCount > len / 2) {
+                    ans++;
+                }
+            }
+        }
+
+        return ans;
+    }
+};
+```
+
+
+----------------------------------------------------------------------------------------------------------------
 
 
 
