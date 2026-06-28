@@ -1717,7 +1717,7 @@ public:
 
 ----------------------------------------------------------------------------------------------------------------
 
-# 1846. Maximum Element After Decreasing and Rearranging
+# [1846. Maximum Element After Decreasing and Rearranging](https://leetcode.com/problems/maximum-element-after-decreasing-and-rearranging/)
 
 Medium
 
@@ -1784,8 +1784,24 @@ Constraints:
 1 <= arr[i] <= 109
 
 
+# Code
+```cpp []
+class Solution {
+public:
+    int maximumElementAfterDecrementingAndRearranging(vector<int>& A) {
+        sort(A.begin(), A.end());
+        int n = A.size();
 
+        A.front() = 1;
+        for (int i = 1; i < n; i++)
+            A[i] = min(A[i], A[i - 1] + 1);
+        
+        return A.back();
+    }
+};
+```
 
+-------------------------------------------------------------------------------------------------------------
 
 
 
