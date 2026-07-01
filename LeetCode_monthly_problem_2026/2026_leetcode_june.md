@@ -2031,7 +2031,7 @@ public:
 
 ----------------------------------------------------------------------------------------------------------------------
 
-# 2812. Find the Safest Path in a Grid
+# [2812. Find the Safest Path in a Grid](https://leetcode.com/problems/find-the-safest-path-in-a-grid/)
 
 Medium
  
@@ -2053,6 +2053,7 @@ The Manhattan distance between two cells (a, b) and (x, y) is equal to |a - x| +
 
 Example 1:
 
+![img](https://assets.leetcode.com/uploads/2023/07/02/example1.png)
 
 Input: grid = [[1,0,0],[0,0,0],[0,0,1]]
 
@@ -2065,6 +2066,7 @@ Explanation: All paths from (0, 0) to (n - 1, n - 1) go through the thieves in c
 
 Example 2:
 
+![img](https://assets.leetcode.com/uploads/2023/07/02/example2.png)
 
 Input: grid = [[0,0,1],[0,0,0],[0,0,0]]
 
@@ -2078,6 +2080,7 @@ It can be shown that there are no other paths with a higher safeness factor.
 
 Example 3:
 
+![img](https://assets.leetcode.com/uploads/2023/07/02/example3.png)
 
 Input: grid = [[0,0,0,1],[0,0,0,0],[0,0,0,0],[1,0,0,0]]
 
@@ -2097,6 +2100,73 @@ grid[i].length == n
 grid[i][j] is either 0 or 1.
 There is at least one thief in the grid.
 
+
+
+# Code
+```cpp []
+class Solution {
+    static constexpr int dirs[4][2] = {{1, 0}, {0, 1}, {-1, 0}, {0, -1}};
+
+public:
+    int maximumSafenessFactor(vector<vector<int>>& A) {
+        if (A[0][0] || A.back().back())
+            return 0;
+
+        int n = A.size();
+        queue<pair<int, int>> q;
+
+        for (int i = 0; i < n; i++)
+            for (int j = 0; j < n; j++)
+                if (A[i][j])
+                    q.push({i, j});
+
+        while (q.size()) {
+            auto [i, j] = q.front();
+            q.pop();
+
+            int v = A[i][j];
+
+            for (auto& d : dirs) {
+                int x = i + d[0];
+                int y = j + d[1];
+
+                if (min(x, y) >= 0 && max(x, y) < n && !A[x][y]) {
+                    A[x][y] = v + 1;
+                    q.push({x, y});
+                }
+            }
+        }
+
+
+
+        priority_queue<tuple<int, int, int>> pq;
+
+        pq.push({A[0][0], 0, 0});
+
+        while (pq.size()) {
+            auto [sf, i, j] = pq.top();
+            pq.pop();
+
+            if (i == n - 1 && j == n - 1)
+                return sf - 1;
+
+            for (auto& d : dirs) {
+                int x = i + d[0];
+                int y = j + d[1];
+
+                if (min(x, y) >= 0 && max(x, y) < n && A[x][y] > 0) {
+                    pq.push({min(sf, A[x][y]), x, y});
+                    A[x][y] *= -1;
+                }
+            }
+        }
+
+        return A.back().back() - 1;
+    }
+};
+```
+
+--------------------------------------------------------------------------------------------------------------------
 
 
 
