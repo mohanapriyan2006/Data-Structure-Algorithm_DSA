@@ -2,7 +2,7 @@
 # LeetCode problems - July 2026
 # ----------------------------------------------------
 
-# 3286. Find a Safe Walk Through a Grid
+# [3286. Find a Safe Walk Through a Grid](https://leetcode.com/problems/find-a-safe-walk-through-a-grid/)
 
 Medium
  
@@ -28,6 +28,8 @@ Output: true
 
 Explanation:
 
+![img](https://assets.leetcode.com/uploads/2024/08/04/3868_examples_1drawio.png)
+
 The final cell can be reached safely by walking along the gray cells below.
 
 
@@ -41,6 +43,8 @@ Output: false
 
 Explanation:
 
+![img](https://assets.leetcode.com/uploads/2024/08/04/3868_examples_2drawio.png)
+
 A minimum of 4 health points is needed to reach the final cell safely.
 
 
@@ -53,6 +57,8 @@ Input: grid = [[1,1,1],[1,0,1],[1,1,1]], health = 5
 Output: true
 
 Explanation:
+
+![img](https://assets.leetcode.com/uploads/2024/08/04/3868_examples_3drawio.png)
 
 The final cell can be reached safely by walking along the gray cells below.
 
