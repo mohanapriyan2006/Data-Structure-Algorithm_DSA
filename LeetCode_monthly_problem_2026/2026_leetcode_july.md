@@ -781,7 +781,7 @@ public:
 
 -------------------------------------------------------------------------------------------
 
-# 3532. Path Existence Queries in a Graph I
+# [3532. Path Existence Queries in a Graph I](https://leetcode.com/problems/path-existence-queries-in-a-graph-i)
 
 Medium
 
@@ -825,7 +825,7 @@ Explanation:
 
 The resulting graph is:
 
-
+![img](https://assets.leetcode.com/uploads/2025/03/25/screenshot-2025-03-26-at-122249.png)
 
 Query [0,1]: There is no edge between Node 0 and Node 1 because |nums[0] - nums[1]| = |2 - 5| = 3, which is greater than maxDiff.
 Query [0,2]: There is no edge between Node 0 and Node 2 because |nums[0] - nums[2]| = |2 - 6| = 4, which is greater than maxDiff.
@@ -848,5 +848,30 @@ nums is sorted in non-decreasing order.
 queries[i] == [ui, vi]
 0 <= ui, vi < n
 
+# code
+```cpp []
+class Solution {
+public:
+    vector<bool> pathExistenceQueries(int n, vector<int>& nums, int maxDiff, vector<vector<int>>& queries) {
+        vector<int> component(n, 0);
+        int compNo = 0;
+        for(int i = 1; i < n; i++){
+            if(nums[i] - nums[i - 1] > maxDiff){
+                compNo++;
+            }
+            component[i] = compNo;
+        }
+        vector<bool> sol;
 
+        for(auto &it : queries){
+            sol.push_back(component[it[0]] == component[it[1]]);
+        }
+
+        return sol;
+    }
+};
+```
+
+
+----------------------------------------------------------------------------------
 
