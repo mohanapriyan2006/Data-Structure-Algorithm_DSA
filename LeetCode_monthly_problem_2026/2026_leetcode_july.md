@@ -1047,7 +1047,7 @@ A connected component is said to be complete if there exists an edge between eve
 
 Example 1:
 
-
+![img](https://assets.leetcode.com/uploads/2023/04/11/screenshot-from-2023-04-11-23-31-23.png)
 
 Input: n = 6, edges = [[0,1],[0,2],[1,2],[3,4]]
 
@@ -1060,7 +1060,7 @@ Explanation: From the picture above, one can see that all of the components of t
 
 Example 2:
 
-
+![img](https://assets.leetcode.com/uploads/2023/04/11/screenshot-from-2023-04-11-23-32-00.png)
 
 Input: n = 6, edges = [[0,1],[0,2],[1,2],[3,4],[3,5]]
 
@@ -1079,6 +1079,54 @@ edges[i].length == 2
 0 <= ai, bi <= n - 1
 ai != bi
 There are no repeated edges.
+
+
+
+# Code
+```cpp []
+class Solution {
+public:
+    int countCompleteComponents(int n, vector<vector<int>>& edges) {
+        vector<vector<int>> A(n);
+
+        for (auto& e : edges) {
+            int u = e[0], v = e[1];
+            A[u].push_back(v);
+            A[v].push_back(u);
+        }
+
+        bitset<51> vis;
+        int res = 0;
+
+        for (int i = 0; i < n; i++) {
+            bool state = vis.test(i);
+
+            if (!state) {
+                int V = 0, E = 0;
+
+                auto dfs = [&](auto& self, int x) -> void {
+                    V++;
+                    E += A[x].size();
+                    vis.set(x);
+
+                    for (auto& state : A[x])
+                        if (!vis.test(state))
+                            self(self, state);
+                };
+
+                dfs(dfs, i);
+
+                res += E == V * (V - 1);
+            }
+        }
+
+        return res;
+    }
+};
+```
+
+---------------------------------------------------------------------------------------------------------
+
 
 
 
