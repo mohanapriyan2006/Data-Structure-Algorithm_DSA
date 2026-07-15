@@ -1412,7 +1412,7 @@ public:
 
 ------------------------------------------------------------------------------------------------------------------------
 
-# 3658. GCD of Odd and Even Sums
+# [3658. GCD of Odd and Even Sums](https://leetcode.com/problems/gcd-of-odd-and-even-sums/)
 
 Easy
  
@@ -1439,6 +1439,7 @@ Sum of the first 4 odd numbers sumOdd = 1 + 3 + 5 + 7 = 16
 Sum of the first 4 even numbers sumEven = 2 + 4 + 6 + 8 = 20
 Hence, GCD(sumOdd, sumEven) = GCD(16, 20) = 4.
 
+![img](https://assets.leetcode.com/users/images/612e5247-b648-43cb-bef9-fdc587003463_1784062951.1061575.gif)
 
 
 
@@ -1462,8 +1463,15 @@ Constraints:
 
 
 
+# Code
+```cpp []
+class Solution {
+public:
+    int gcdOfOddEvenSums(int n) { return n; }
+};
+```
 
-
+---------------------------------------------------------------------------------------------------
 
 
 
