@@ -1473,7 +1473,7 @@ public:
 
 ---------------------------------------------------------------------------------------------------
 
-# 3867. Sum of GCD of Formed Pairs
+# [3867. Sum of GCD of Formed Pairs](https://leetcode.com/problems/sum-of-gcd-of-formed-pairs)
 
 Medium
  
@@ -1544,8 +1544,30 @@ Constraints:
 1 <= nums[i] <= 10​​​​​​​9
 
 
+# Code
+```cpp []
+class Solution {
+public:
+    long long gcdSum(vector<int>& A) {
+        int max = 0;
 
+        for (auto& n : A) {
+            max = ::max(max, n);
+            n = gcd(n, max);
+        }
 
+        ranges::sort(A);
+
+        long long res = 0;
+        for (int i = 0, j = A.size() - 1; i < j; i++, j--)
+            res += gcd(A[i], A[j]);
+
+        return res;
+    }
+};
+```
+
+--------------------------------------------------------------------------------------------------
 
 
 
