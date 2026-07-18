@@ -1677,8 +1677,7 @@ public:
 
 --------------------------------------------------------------------------------
 
-# 1979. Find Greatest Common Divisor of Array
-
+# [1979. Find Greatest Common Divisor of Array](https://leetcode.com/problems/find-greatest-common-divisor-of-array/)
 Easy
  
 Given an integer array nums, return the greatest common divisor of the smallest number and largest number in nums.
@@ -1719,6 +1718,28 @@ Constraints:
 1 <= nums[i] <= 1000
 
 
+# Code
+```cpp []
+class Solution {
+    int gcd(int a,int b){
+        if(b == 0) return a;
+        return gcd(b , a%b);
+    }
+public:
+    int findGCD(vector<int>& nums) {
+        int mn = 1001 , mx=0;
+
+        for(int i=0; i<nums.size(); i++){
+            if(nums[i]<mn) mn = nums[i];
+            if(nums[i] > mx) mx = nums[i];
+        }
+
+        return gcd(mn,mx);
+    }
+};
+```
+
+----------------------------------------------------------------------------------------
 
 
 
