@@ -1811,7 +1811,7 @@ public:
 
 ---------------------------------------------------------------------------------------------------------- 
 
-# 1260. Shift 2D Grid
+# [1260. Shift 2D Grid](https://leetcode.com/problems/shift-2d-grid/)
 
 Easy
  
@@ -1861,6 +1861,39 @@ n == grid[i].length
 1 <= n <= 50
 -1000 <= grid[i][j] <= 1000
 0 <= k <= 100
+
+
+# Code
+```cpp []
+class Solution {
+public:
+    vector<vector<int>> shiftGrid(vector<vector<int>>& grid, int k) {
+        if (!k) return grid;
+        int r = grid.size(), c = grid[0].size();
+        int n = r * c;
+
+        k = k % n;
+        if (!k) return grid;
+
+        auto shift = [&](int i, int j) {
+            while (i < j) {
+                swap(grid[i / c][i % c], grid[j / c][j % c]);
+                i++;
+                j--;
+            }
+        };
+
+        shift(0, n - 1);
+        shift(0, k - 1);
+        shift(k, n - 1);
+
+        return grid;
+    }
+};
+```
+
+-----------------------------------------------------------------------
+
 
 
 
