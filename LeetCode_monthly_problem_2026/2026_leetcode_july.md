@@ -2126,7 +2126,7 @@ public:
 
 ---------------------------------------------------------------------------------------------------------------------
 
-# 1464. Maximum Product of Two Elements in an Array
+# [1464. Maximum Product of Two Elements in an Array](https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/)
 
 Easy
  
@@ -2160,6 +2160,21 @@ Example 3:
 Input: nums = [3,7]
 
 Output: 12
+
+
+# Code
+```cpp []
+class Solution {
+public:
+    int maxProduct(vector<int>& nums) {
+        nth_element(nums.begin(), nums.begin()+1, nums.end(), greater<int>());
+        return (nums[0]-1)*(nums[1]-1);
+    }
+};
+```
+
+--------------------------------------------------------------------------------------------------------------
+
 
 
 
