@@ -2394,7 +2394,7 @@ public:
 
 ---------------------------------------------------------------------------------------------
 
-# 3014. Minimum Number of Pushes to Type Word I
+# [3014. Minimum Number of Pushes to Type Word I](https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-i)
 
 Easy
  
@@ -2414,6 +2414,7 @@ An example mapping of letters to keys on a telephone keypad is given below. Note
 
 Example 1:
 
+![img](https://assets.leetcode.com/uploads/2023/12/26/keypadv1e1.png)
 
 Input: word = "abcde"
 
@@ -2434,6 +2435,7 @@ It can be shown that no other mapping can provide a lower cost.
 
 Example 2:
 
+![img](https://assets.leetcode.com/uploads/2023/12/26/keypadv1e2.png)
 
 Input: word = "xycdefghij"
 
@@ -2461,5 +2463,20 @@ Constraints:
 word consists of lowercase English letters.
 All letters in word are distinct.
  
+
+# Code
+```cpp []
+class Solution {
+public:
+    int minimumPushes(string A) {
+        auto q = A.size() >> 3, r = A.size() & 7;
+        return ((q << 2) + r) * (q + 1);
+    }
+};
+```
+
+---------------------------------------------------------------------
+
+
 
 
