@@ -2544,7 +2544,7 @@ public:
 
 --------------------------------------------------------------------------
 
-# 877. Stone Game
+# [877. Stone Game](https://leetcode.com/problems/stone-game/description/)
 
 Medium
 
@@ -2592,6 +2592,19 @@ Constraints:
 piles.length is even.
 1 <= piles[i] <= 500
 sum(piles[i]) is odd.
+
+
+
+# Code
+```cpp []
+class Solution {
+public:
+    bool stoneGame(vector<int>& piles) { return 1; }
+};
+```
+
+
+------------------------------------------------------------------------------------------------
 
 
 
