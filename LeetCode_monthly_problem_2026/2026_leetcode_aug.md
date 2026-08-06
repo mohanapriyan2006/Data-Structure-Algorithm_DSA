@@ -237,7 +237,7 @@ public:
 
 ----------------------------------------------------------------------------------------------------
 
-# 3345. Smallest Divisible Digit Product I
+# [3345. Smallest Divisible Digit Product I](https://leetcode.com/problems/smallest-divisible-digit-product-i)
 
 Easy
  
@@ -278,8 +278,23 @@ Constraints:
 1 <= t <= 10
 
 
+# Code
+```cpp []
+class Solution {
+public:
+    int smallestNumber(int n, int t) {
+        auto [q, r] = div(n, 10);
 
+        int req = t / gcd(q + (10 - q) / 10, t);
+        int nxt = ((r + req - 1) / req) * req;
+        int x = nxt - (nxt - 10) * (nxt / 10);
 
+        return q * 10 + x;
+    }
+};
+```
+
+-----------------------------------------------------------------------------------------------------------------
 
 
 
