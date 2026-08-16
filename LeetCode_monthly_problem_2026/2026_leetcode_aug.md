@@ -1150,7 +1150,7 @@ public:
 
 -------------------------------------------------------------------------------------------------------------------------
 
-# 2029. Stone Game IX
+# [2029. Stone Game IX](https://leetcode.com/problems/stone-game-ix/)
 
 Medium
  
@@ -1209,8 +1209,25 @@ Constraints:
 1 <= stones[i] <= 104
 
 
+# Code
+```cpp []
+class Solution {
+public:
+    bool stoneGameIX(vector<int>& stones) {
+        int f[3] = {0, 0, 0};
 
+        for (auto& s : stones)
+            f[s % 3]++;
 
+        if (~f[0] & 1)
+            return min(f[1], f[2]) >= 1;
+
+        return abs(f[1] - f[2]) >= 3;
+    }
+};
+```
+
+--------------------------------------------------------------------------------------
 
 
 
